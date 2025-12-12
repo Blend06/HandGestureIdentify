@@ -46,7 +46,7 @@ with mp_hands.Hands(
                     frame, hand_landmarks, mp_hands.HAND_CONNECTIONS
                 )
                 
-                  # Display prediction text
+                # Display prediction text
                 cv2.putText(
                     frame,
                     f"Gesture: {prediction}",
@@ -56,8 +56,9 @@ with mp_hands.Hands(
                     (0, 255, 0),
                     2
                 )
-                
-                cv2.imshow("Real-Time Gesture Recognition", frame)
+        
+        # Always show the frame (whether hand is detected or not)
+        cv2.imshow("Real-Time Gesture Recognition", frame)
 
         if cv2.waitKey(1) & 0xFF == ord('q'):
             break
