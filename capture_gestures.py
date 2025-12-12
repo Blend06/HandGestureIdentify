@@ -4,7 +4,7 @@ import numpy as np
 import csv
 import os
 
-CSV_FILE = "gesture_data.py"
+CSV_FILE = "gesture_data.csv"
 
 GESTURE_KEYS = {
     ord("1"): "Thumbs_Up",
